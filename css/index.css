@@ -1,0 +1,244 @@
+@font-face {
+  font-family: "SFProText";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://static.paytmmoney.com/fonts/sf-pro-text-regular.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFProText";
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://static.paytmmoney.com/fonts/sf-pro-text-medium.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFProText";
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://static.paytmmoney.com/fonts/sf-pro-text-semibold.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFProText";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://static.paytmmoney.com/fonts/sf-pro-text-bold.woff2) format("woff2");
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+body .primaryBody {
+  width: 100%;
+  background: url(https://www.awxcdn.com/adc-assets/images/hero/3/768x450.jpg) 50%/100% 100% no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .primaryBody .headerOuter {
+  width: 100%;
+  background: linear-gradient(#000000, transparent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .primaryBody .headerOuter .header {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+}
+body .primaryBody .headerOuter .header .mainIcon {
+  width: 25px;
+}
+body .primaryBody .headerOuter .header .title {
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: SFProText;
+}
+body .primaryBody .content {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px 20px 40px;
+}
+body .primaryBody .content .searchDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 2px solid #7d7d7d;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+body .primaryBody .content .searchDiv .searchInput {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #000000;
+  font-family: SFProText;
+  margin: 0 0 0 10px;
+}
+body .primaryBody .content .searchDiv .searchInput:focus {
+  border: none;
+  outline: none;
+}
+body .primaryBody .content .cityList {
+  list-style-type: none;
+  background-color: #ffffff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body .primaryBody .content .cityList li {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+body .primaryBody .content .cityList li a {
+  display: block;
+  margin: 0;
+  padding: 5px 10px;
+  width: 100%;
+  border: 1px solid #dddddd;
+  background-color: #f6f6f6;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  font-family: SFProText;
+}
+body .primaryBody .content .cityList li a:hover:not(.header) {
+  background-color: #eeeeee;
+}
+body .secondaryBody {
+  overflow-x: auto;
+  width: 100%;
+  padding: 40px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body .secondaryBody .loader {
+  border: 16px solid rgba(152, 52, 84, 0.2235294118);
+  border-radius: 50%;
+  border-top: 16px solid #453553;
+  width: 150px;
+  height: 150px;
+  -js-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+@-js-keyframes spin {
+  0% {
+    -js-transform: rotate(0deg);
+  }
+  100% {
+    -js-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body .secondaryBody .weatherForecast {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  width: 100%;
+}
+body .secondaryBody .weatherForecast .itemWrapper {
+  padding: 10px;
+  align-self: stretch;
+  flex: 1;
+}
+body .secondaryBody .weatherForecast .itemWrapper .item {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  height: 100%;
+}
+body .secondaryBody .weatherForecast .itemWrapper .item .date {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #000000;
+  font-family: SFProText;
+  text-align: center;
+}
+body .secondaryBody .weatherForecast .itemWrapper .item .weatherImg {
+  margin: 10px 0 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body .secondaryBody .weatherForecast .itemWrapper .item .weatherInfo {
+  margin: 10px 0 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #000000;
+  font-family: SFProText;
+  text-align: center;
+}
+body .secondaryBody .weatherForecast .itemWrapper .item .maxTemp {
+  margin: 10px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #000000;
+  font-family: SFProText;
+  text-align: center;
+}
+body .secondaryBody .weatherForecast .itemWrapper .item .minTemp {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #000000;
+  font-family: SFProText;
+  text-align: center;
+}
+body .footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f6f6f6;
+  padding: 40px;
+}
+body .footer .copyrightText {
+  text-align: center;
+  color: #000000;
+  font-family: SFProText;
+}
+
+@media (max-width: 600px) {
+  .weatherForecast {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=index.css.map */

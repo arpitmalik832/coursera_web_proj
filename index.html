@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="./images/icon_main.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="“Pragma”" content="”no-cache”" />
+    <meta http-equiv="“Expires”" content="”-1″" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,user-scalable=no"
+    />
+    <meta
+      httpEquiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Weather Forecast</title>
+  </head>
+
+  <body>
+    <!-- primary body -->
+    <div class="primaryBody">
+      <!-- hea der -->
+      <div class="headerOuter">
+        <div class="header">
+          <img
+            class="mainIcon"
+            src="./images/icon_main.png"
+            alt="Weather Forecast"
+          />
+          <div class="title">Weather Forecast</div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="searchDiv">
+          <i class="fa fa-search"></i>
+          <input
+            id="searchInput"
+            class="searchInput"
+            type="text"
+            placeholder="Enter Location"
+          />
+        </div>
+        <ul id="cityList" class="cityList"></ul>
+      </div>
+    </div>
+    <div class="secondaryBody">
+      <div class="loader" id="loader"></div>
+      <div class="weatherForecast" id="weatherForecast"></div>
+    </div>
+    <div class="footer">
+      <div class="copyrightText">© Copyright 2023 Arpit Malik</div>
+    </div>
+  </body>
+
+  <!-- Our codes -->
+  <script src="js/index.js"></script>
+</html>
